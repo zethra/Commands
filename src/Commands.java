@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by Ben on 12/18/2014.
  */
-public class commands extends JFrame implements ActionListener{
+public class Commands extends JFrame implements ActionListener{
     JPanel mainPanel;
     JButton control;
     JButton cmd;
@@ -19,7 +19,7 @@ public class commands extends JFrame implements ActionListener{
     JButton lusrmgr;
 
 
-    public commands() {
+    public Commands() {
         mainPanel = new JPanel();
         mainPanel.setLayout(new MigLayout());
         control = new JButton("Control Panel");
@@ -73,7 +73,7 @@ public class commands extends JFrame implements ActionListener{
     }
 
     public static void main(String args[]) {
-        commands gui = new commands();
+        Commands gui = new Commands();
         gui.pack();
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.setVisible(true);
